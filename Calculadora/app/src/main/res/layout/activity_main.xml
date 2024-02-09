@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8D9822"
+        android:text="RESULT"
+        app:layout_constraintEnd_toStartOf="@+id/btnBorrar"
+        app:layout_constraintStart_toEndOf="@+id/btnCero"
+        app:layout_constraintTop_toBottomOf="@+id/btnDos" />
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E8B10B"
+        android:text="3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMultilicar"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultilicar"
+        app:layout_constraintStart_toEndOf="@+id/btnDos" />
+
+    <Button
+        android:id="@+id/btnSeis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E8B10B"
+        android:text="6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnRestar"
+        app:layout_constraintEnd_toStartOf="@+id/btnRestar"
+        app:layout_constraintStart_toEndOf="@+id/btnCinco" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textColor="@color/gray"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <Button
+        android:id="@+id/btnSiete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="#E8B10B"
+        android:text="7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnOcho"
+        app:layout_constraintEnd_toStartOf="@+id/btnOcho"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOcho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#E8B10B"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/btnNueve"
+        app:layout_constraintStart_toEndOf="@+id/btnSiete"
+        app:layout_constraintTop_toTopOf="@+id/btnNueve" />
+
+    <Button
+        android:id="@+id/btnNueve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E8B10B"
+        android:text="9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSumar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSumar"
+        app:layout_constraintStart_toEndOf="@+id/btnOcho" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#534C37"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/btnRestar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNueve"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+    <Button
+        android:id="@+id/btnCuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#E8B10B"
+        android:text="4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnCinco"
+        app:layout_constraintEnd_toStartOf="@+id/btnCinco"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#E8B10B"
+        android:text="5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSeis"
+        app:layout_constraintEnd_toStartOf="@+id/btnSeis"
+        app:layout_constraintStart_toEndOf="@+id/btnCuatro" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#534C37"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultilicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSeis"
+        app:layout_constraintTop_toBottomOf="@+id/btnSumar" />
+
+    <Button
+        android:id="@+id/btnUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="3dp"
+        android:backgroundTint="#E8B10B"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDos"
+        app:layout_constraintEnd_toStartOf="@+id/btnDos"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#E8B10B"
+        android:text="2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnTres"
+        app:layout_constraintEnd_toStartOf="@+id/btnTres"
+        app:layout_constraintStart_toEndOf="@+id/btnUno" />
+
+    <Button
+        android:id="@+id/btnMultilicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#534C37"
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/btnDivision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTres"
+        app:layout_constraintTop_toBottomOf="@+id/btnRestar" />
+
+    <Button
+        android:id="@+id/btnCero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#E8B10B"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnResult"
+        app:layout_constraintEnd_toStartOf="@+id/btnResult"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:backgroundTint="#DF5046"
+        android:text="BORRAR"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnResult"
+        app:layout_constraintEnd_toStartOf="@+id/btnDivision"
+        app:layout_constraintStart_toEndOf="@+id/btnResult" />
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="202dp"
+        android:backgroundTint="#534C37"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnMultilicar" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="282dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSumar"
+        app:layout_constraintEnd_toEndOf="@+id/btnOcho"
+        app:layout_constraintStart_toEndOf="@+id/btnOcho"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumeros" />
+
+    <TextView
+        android:id="@+id/tvNumeros"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="13dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
